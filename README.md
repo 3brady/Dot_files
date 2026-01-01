@@ -39,3 +39,5 @@ Theme and wallpapers can be customized freely.
 
 #preview
 
+![Preview](screenshots/preview1.png)
+![Preview](screenshots/preview2.png)
