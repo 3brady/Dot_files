@@ -1,0 +1,130 @@
+
+@import "../omarchy/current/theme/waybar.css";
+
+/* ------------------------------
+   Waybar Base Styles
+   ------------------------------ */
+
+/* Only paint the bar window, not every element */
+window#waybar {
+  background: transparent;       /* let groups show their own bg */
+  padding: 8px;           /* space around module groups */
+}
+
+/* Reset global elements */
+* {
+  color: @foreground;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'FiraCode Nerd Font';
+  font-size: 12px;
+  background: transparent;       /* prevent modules from inheriting solid bg */
+}
+
+/* ------------------------------
+   Rounded module groups
+   ------------------------------ */
+.modules-left,
+.modules-center,
+.modules-right {
+  background: @background;       /* group background color */
+  border-radius: 12px;           /* rounded corners for the group */
+  padding: 4px 10px;             /* inner padding inside the group */
+  -webkit-backdrop-filter: saturate(120%) blur(4px); /* optional glass effect */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06) inset; /* subtle inner shading */
+}
+
+/* Margin between module groups */
+.modules-left   { margin-left: 10px; margin-right: 10px; margin-top: 2px}
+.modules-center { margin-top: 2px; }
+.modules-right  { margin-right: 10px; margin-left: 10px; margin-top: 2px}
+
+/* Make sure individual modules inside groups are transparent */
+.modules-left > *,
+.modules-center > *,
+.modules-right > * {
+  background: transparent;
+  border-radius: 0;
+  padding: 0; 
+}
+
+/* ------------------------------
+   Specific modules / buttons
+   ------------------------------ */
+#workspaces button {
+  all: initial;
+  padding: 2px 8px;
+  margin: 0 2px;
+  min-width: 9px;
+  border-radius: 8px;           /* pill shape for each workspace */
+  background: transparent;      /* group bg shows */
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-date,
+#custom-omarchy,
+#custom-headset-battery,
+#custom-screenrecording-indicator,
+#custom-brightness,
+#custom-update {
+  min-width: 12px;
+  margin: 0 10px 0 0; /* Uniform right margin of 8px */
+  background: transparent;      /* avoid overriding group background */
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 10px;
+  margin-left: 7.5px
+}
+
+#network {
+  margin-right: 10px;
+  margin-left: 8.75px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+  margin-right: 7.5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
