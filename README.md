@@ -4,32 +4,28 @@ This repository contains my personal configuration files (dotfiles) for my arch(
 
 ## Directory Structure
 
+```text
 dotfiles/
 ├── wm/
 │   ├── hyprland/
 │   └── waybar/
-│
 ├── terminal/
 │   └── kitty/
-│
 ├── editor/
 │   ├── nvim/
 │   └── vscode/
-│
 ├── theme/
 │   ├── gtk/
 │   └── wallpapers/
-│
 ├── system/
 │   └── fastfetch/
 │       ├── config.json
 │       └── ascii.txt
-│
 ├── screenshots/
 │   └── preview.png
-│
 ├── README.md
 └── .gitignore
+```
 
 
 ## Notes
