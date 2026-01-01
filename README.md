@@ -37,7 +37,7 @@ Some configurations may need adjustments for other distributions or setups.
 
 Theme and wallpapers can be customized freely.
 
-#preview
+# preview
 
 ![Preview](screenshots/preview1.png)
 ![Preview](screenshots/preview2.png)
