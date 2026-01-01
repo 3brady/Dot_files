@@ -35,3 +35,6 @@ This setup is designed for Arch(omarchy) Linux / Hyprland environment.
 Some configurations may need adjustments for other distributions or setups.
 
 Theme and wallpapers can be customized freely.
+
+#preview
+
