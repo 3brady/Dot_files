@@ -22,7 +22,8 @@ dotfiles/
 │       ├── config.json
 │       └── ascii.txt
 ├── screenshots/
-│   └── preview.png
+│   └── preview1.png
+│   └── preview2.png
 │
 └── README.md
 ```
