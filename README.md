@@ -23,8 +23,8 @@ dotfiles/
 │       └── ascii.txt
 ├── screenshots/
 │   └── preview.png
-├── README.md
-└── .gitignore
+│
+└── README.md
 ```
 
 
